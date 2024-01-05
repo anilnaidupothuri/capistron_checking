@@ -7,7 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-server 'localhost:3000', user: 'ext-hyd-lap-055', roles: %w{app db web}#, port: 0
+server 'localhost', user: 'ext-hyd-lap-055', roles: %w{app db web}#, port: 0
 set :puma_workers, 2
 set :sidekiq_processes, 2
 set :branch, 'master'
